@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { createStore , applyMiddleware, compose} from 'redux';
 import rootReducers from './store/reducers/rootReducers';
 import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';                                        // store enhancer
+import thunk from 'redux-thunk';                                        // store enhancer, thunk is middleware
 import { reduxFirestore, getFirestore } from 'redux-firestore';          // store enhancer
 import {reactReduxFirebase, getFirebase } from 'react-redux-firebase';  // store enhancer
 import fbConfig from './config/fbConfig';

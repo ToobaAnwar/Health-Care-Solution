@@ -27,6 +27,9 @@ const NavigationAuth = (props) =>{
               <li className="has-dropdown healthy-living ">
                 <NavLink className="anchor dropdown-button" to={ROUTES.HEALTHY} ><span >Healthy Living</span></NavLink>
               </li>
+              <li className="has-dropdown healthy-living ">
+                <NavLink className="anchor dropdown-button" to='/docdashboard' ><span >Our Doctors</span></NavLink>
+              </li>
               <li className="about">
                <NavLink to={ROUTES.ABOUT} className="anchor"><span>About</span></NavLink>
               </li>
