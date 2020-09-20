@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../../Shoping.css';
 
-const API = 'AIzaSyAOYG1Ai4mZy6L-ifZgQ8bzS87vA6v3JdA';
+const API = 'AIzaSyBcD-EK2F3tlc_B81bvsRbAP_XQhgBXcRg';
 // const channelID = 'UCXgGY0wkgOzynnHvSEVmE3A';
 const channelID = 'UCiP6wD_tYlYLYh3agzbByWQ';
 const result = 20;
@@ -22,7 +22,7 @@ class Workout extends Component {
         fetch(finalURL)
     .then((response) => response.json())
     .then((responseJson) => {
-    //   console.log(responseJson);
+       console.log(responseJson);
        const resultyt = responseJson.items.map(obj => "https://www.youtube.com/embed/" + obj.id.videoId);
        this.setState({resultyt});
        
@@ -46,7 +46,7 @@ class Workout extends Component {
                     this.state.resultyt.map((link, i) => {
                         console.log(link);
                         var frame = <div key={i} className='youtube'>
-                            <iframe width="560" height="315" src={link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                            <iframe width="860" height="515" src={link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                             </iframe></div>
                          return frame;
                     })
@@ -60,3 +60,9 @@ class Workout extends Component {
 }
 
 export default Workout;
+
+
+
+
+
+{/* <iframe width="560" height="315" src="https://www.youtube.com/embed/5NgQVkcZ7Mg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}

@@ -26,7 +26,7 @@ class SignIn extends React.Component{
       const { authError, auth } = this.props;
       if(auth.uid) return <Redirect to={ROUTES.SECTION} />
         const style1 = {
-            backgroundColor: 'hsla( 0,0,0,0.5	)',
+            backgroundColor: 'hsla( 0.5,0.5,0.5,0.5	)',
             opacity: '1.0px',
             backgroundImage : `url(${f12})`,
             backgroundPosition: 'center',
